@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Poppins } from '@next/font/google';
+import AppContext from "@/context/AppContext";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,7 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content={process.env.NEXT_PUBLIC_APP_NAME} />
         <meta name="keywords" content={process.env.NEXT_PUBLIC_APP_NAME} />
       </Head>
-    <Component {...pageProps} />
+      <AppContext>
+        <Component {...pageProps} />
+      </AppContext>
     </main>
   );
 }
