@@ -1,3 +1,4 @@
+import { LastCheckInterface } from '@/types';
 import {
   createContext,
   ReactNode,
@@ -6,8 +7,8 @@ import {
 } from 'react';
 
 interface GlobalContextInterface {
-  lastCheck: Array<{ value: number; status: string; date: string; }>;
-  setLastCheck: (message: Array<{ value: number; status: string; date: string; }>) => void;
+  lastCheck: LastCheckInterface[];
+  setLastCheck: (message: LastCheckInterface[]) => void;
 }
 
 export const GlobalContext = createContext<GlobalContextInterface>({
@@ -16,7 +17,7 @@ export const GlobalContext = createContext<GlobalContextInterface>({
 });
 
 export const GlobalProvider = ({ children }: { children: ReactNode }) => {
-  const [lastCheck, setLastCheck] = useState<Array<{ value: number; status: string; date: string; }>>([]);
+  const [lastCheck, setLastCheck] = useState<LastCheckInterface[]>([]);
 
   return (
     <GlobalContext.Provider
