@@ -14,7 +14,7 @@
 
 ## 🚀 Technologies & Resources
 
-- [x] [Next.js]([https://svelte.dev/docs/introduction](https://nextjs.org/)
+- [x] [Next.js](https://nextjs.org/)
 - [x] [Tailwindcss](https://tailwindcss.com/docs/installation)
 
 ## 💻 Installation
