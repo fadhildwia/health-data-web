@@ -6,13 +6,6 @@
 
 <br>
 
-### Detail
-
-###<h1 align="center">
-###  <img alt="MovieApps" title="MovieApps" src="./github/home.png" height="425" />
-###  <img alt="MovieApps" title="MovieApps" src="./github/full.gif" height="425" />
-###</h1>
-
 ## 📱 Features
 
 - Create a layout using Tailwindcss
